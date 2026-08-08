@@ -1,0 +1,23 @@
+# Data Manipulation and Computation
+numpy
+pandas
+
+# Audio Processing
+librosa
+soundfile
+
+# Machine Learning & Deep Learning
+scikit-learn
+tensorflow
+joblib
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Web Application Framework
+streamlit
+
+# Interactive Notebook Environment
+jupyter

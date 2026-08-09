@@ -9,22 +9,24 @@ This monolithic repository contains multiple standalone projects. Each project i
 ### 📁 [Project 1: Credit Risk Modeling](./project-1/)
 A predictive modeling project focused on assessing financial risk. 
 * **Objective:** Predict the likelihood of a borrower defaulting on a loan based on historical and financial data.
-* **Tech Stack:** Python, Pandas, Scikit-Learn, Jupyter Notebook.
-* **Status:** Completed.
-* 👉 [Click here to view Project 1](./project-1/readme.md)
+* **Tech Stack:** Python, Pandas, Scikit-Learn, Jupyter Notebook, Streamlit.
+* **Status:** Completed & Deployed.
+* 🌐 **Live Demo:** [Creditworthiness Predictor](https://lokeshchhajer-creditworthiness-project.streamlit.app/)
+* 👉 [Click here to view Project 1 Source Code](./project-1/readme.md)
 
 ### 📁 [Project 2: Speech Emotion Recognition (SER)](./project-2/)
 An end-to-end Deep Learning project designed to recognize and classify human emotions from audio speech recordings.
 * **Objective:** Classify emotions (Happy, Sad, Angry, etc.) from audio files using Deep Learning architectures.
 * **Tech Stack:** Python, TensorFlow/Keras (1D CNN & LSTM), Librosa, Streamlit.
-* **Status:** Completed.
-* 👉 [Click here to view Project 2](./project-2/readme.md)
+* **Status:** Completed & Deployed.
+* 🌐 **Live Demo:** [Emotion Recognition App](https://lokeshchhajer-speech-emotion-recognition-project.streamlit.app/)
+* 👉 [Click here to view Project 2 Source Code](./project-2/README.md)
 
 ---
 
 ## ⚙️ General Setup Instructions
 
-Since each project utilizes a different tech stack and specific libraries, they have separate environments. To run a specific project:
+Since each project utilizes a different tech stack and specific libraries, they have separate environments. To run a specific project locally:
 
 1. Clone this repository to your local machine:
    ```bash

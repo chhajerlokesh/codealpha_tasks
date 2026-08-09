@@ -5,6 +5,7 @@ import joblib
 import tensorflow as tf
 import plotly.express as px
 import pandas as pd
+import os
 
 # Page Configuration
 st.set_page_config(
@@ -13,15 +14,26 @@ st.set_page_config(
     layout="wide"
 )
 
+
 # ---------------------------------------------------------
 # 1. Model & Artifact Loading (Cached for performance)
 # ---------------------------------------------------------
 @st.cache_resource
 def load_artifacts():
     try:
-        model = tf.keras.models.load_model('best_emotion_model.keras')
-        scaler = joblib.load('scaler.joblib')
-        le = joblib.load('label_encoder.joblib')
+        # Get the absolute path to the directory where app.py is located (project-2)
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+        
+        # Construct the exact paths for all three files
+        model_path = os.path.join(BASE_DIR, 'best_emotion_model.keras')
+        scaler_path = os.path.join(BASE_DIR, 'scaler.joblib')
+        le_path = os.path.join(BASE_DIR, 'label_encoder.joblib')
+        
+        # Load the artifacts using the absolute paths
+        model = tf.keras.models.load_model(model_path)
+        scaler = joblib.load(scaler_path)
+        le = joblib.load(le_path)
+        
         return model, scaler, le
     except Exception as e:
         st.error(f"Error loading artifacts: {str(e)}")

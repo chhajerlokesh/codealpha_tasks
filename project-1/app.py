@@ -23,7 +23,12 @@ st.set_page_config(
     layout="centered",
 )
 
-MODEL_PATH = "best_model.pkl"
+import os
+
+# Get the absolute path to the directory where app.py is located
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# Construct the exact path to the model file
+MODEL_PATH = os.path.join(BASE_DIR, "best_model.pkl")
 
 
 # ------------------------------------------------------------------

@@ -1,5 +1,3 @@
 .venv/
 *.csv
-*.joblib
-*.keras
 .DS_Store
